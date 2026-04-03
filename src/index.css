@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Slight global bump for all Tailwind text-sm usage */
+.text-sm {
+  font-size: 1rem; /* 16px */
+  line-height: 1.45;
+}
+
+* { scroll-behavior: smooth; }
+*,
+*::before,
+*::after { min-width: 0; }
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-feature-settings: 'rlig' 1, 'calt' 1;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ─── Dot grid ─── */
+.dot-grid {
+  background-image: radial-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ─── Global subtle cyan ambient — dark mode ─── */
+.dark section {
+  background-image:
+    radial-gradient(ellipse 160% 60% at 50% -10%, rgba(6, 182, 212, 0.08) 0%, transparent 65%);
+}
+.dark section:nth-child(even) {
+  background-image:
+    radial-gradient(ellipse 160% 60% at 80% 110%, rgba(6, 182, 212, 0.07) 0%, transparent 65%);
+}
+.dark footer {
+  background-image:
+    radial-gradient(ellipse 120% 80% at 20% 100%, rgba(6, 182, 212, 0.07) 0%, transparent 60%);
+}
+
+/* ─── Global subtle cyan ambient — light mode ─── */
+/* Kept very faint (0.03–0.04) so it doesn't muddy the white background */
+section {
+  background-image:
+    radial-gradient(ellipse 160% 60% at 50% -10%, rgba(6, 182, 212, 0.04) 0%, transparent 65%);
+}
+section:nth-child(even) {
+  background-image:
+    radial-gradient(ellipse 160% 60% at 80% 110%, rgba(6, 182, 212, 0.03) 0%, transparent 65%);
+}
+footer {
+  background-image:
+    radial-gradient(ellipse 120% 80% at 20% 100%, rgba(6, 182, 212, 0.03) 0%, transparent 60%);
+}
+
+/* ─── Glass ─── */
+.glass {
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+}
+
+/* ─── Cyan gradient text ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #06b6d4, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animate-gradient-text { /* alias */
+  background: linear-gradient(135deg, #06b6d4, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Marquee ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 35s linear infinite;
+  display: flex;
+  width: max-content;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #06b6d4; border-radius: 99px; }
+::selection { background: rgba(6, 182, 212, 0.25); color: inherit; }
+
+/* kept empty so JSX won't error */
+.glass-card, .glass-card-light, .gradient-border { }
+.blob-animate, .blob-animate-delay, .blob-animate-slow { }
+.mesh-dark, .mesh-light { }
+.glow-sm, .glow-cyan, .text-glow { }
+.dot-grid-light { }
