@@ -10,7 +10,7 @@ const socials = [
 ]
 
 const nav = [
-  { heading: 'Product', links: [{ label: 'Lekka', href: 'https://beylelekka.beylesys.com/', external: true }] },
+  { heading: 'Product', links: [{ label: 'Lekka', href: 'https://beylesys.com/', external: true }] },
   { heading: 'Company', links: [{ label: 'About', href: '#about' }, { label: 'Contact', href: '#contact' }] },
   { heading: 'Legal', links: [{ label: 'Privacy', href: '#' }, { label: 'Terms', href: '#' }] },
 ]
