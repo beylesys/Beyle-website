@@ -79,7 +79,7 @@ export default function Services() {
                 Watch Lekka in action — then jump in and try it yourself.
               </p>
             </div>
-            <a href="https://beylelekka.beylesys.com/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.youtube.com/@Beylesys" target="_blank" rel="noopener noreferrer"
               className="w-full sm:w-auto text-center flex-shrink-0 px-10 sm:px-12 py-5 bg-cyan-500 text-black text-[10px] font-black uppercase tracking-[0.3em] hover:bg-cyan-400 transition-all shadow-xl shadow-cyan-500/20"
             >
               Watch on YouTube →

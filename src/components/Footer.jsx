@@ -45,7 +45,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors group break-all"
               >
                 <Mail size={13} className="flex-shrink-0 group-hover:text-cyan-500 transition-colors" />
-                info@beylesys.com
+                contact@beylesys.com
               </a>
               <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-500">
                 <MapPin size={13} className="flex-shrink-0" />
@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-slate-200 dark:border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-400 dark:text-slate-600">
-            © {new Date().getFullYear()} BeyleSys Technologies. All rights reserved.
+            © {new Date().getFullYear()} Beylesys Technologies. All rights reserved.
           </p>
           <p className="text-xs text-slate-400 dark:text-slate-600 italic">
             Built in Mangalore.

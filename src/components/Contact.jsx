@@ -58,7 +58,7 @@ const inputCls = `w-full px-4 py-4 rounded-sm text-sm outline-none transition-al
 
 const contactInfo = [
   { Icon: MapPin, label: 'Location', val: 'Bejai, Mangalore' },
-  { Icon: Mail, label: 'Email', val: 'info@beylesys.com' },
+  { Icon: Mail, label: 'Email', val: 'contact@beylesys.com' },
   { Icon: Clock, label: 'Availability', val: 'Mon–Fri · 9 AM – 6 PM IST' },
 ]
 
@@ -68,7 +68,7 @@ const socials = [
   { label: 'Discord', href: 'https://discord.gg/gFABgqUr' },
   { label: 'YouTube', href: 'https://www.youtube.com/@Beylesys' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/beylesys-technologies/' },
-  { label: 'Reddit', href: '#' },
+  { label: 'Reddit', href: 'https://www.reddit.com/user/BeylesysTechnologies/' },
 ]
 
 const encode = (data) => {
