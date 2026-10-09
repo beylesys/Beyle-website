@@ -59,7 +59,7 @@ const inputCls = `w-full px-4 py-4 rounded-sm text-sm outline-none transition-al
 const contactInfo = [
   { Icon: MapPin, label: 'Location', val: 'Bejai, Mangalore' },
   { Icon: Mail, label: 'Email', val: 'contact@beylesys.com' },
-  { Icon: Clock, label: 'Availability', val: 'Mon–Fri · 9 AM – 6 PM IST' },
+  { Icon: Clock, label: 'Availability', val: 'Mon–Fri · 10 AM – 6 PM IST' },
 ]
 
 const socials = [
