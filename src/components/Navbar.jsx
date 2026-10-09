@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/Beylesys technologies.png'
+import logo from '../assets/Beylesys_logo_centered.png'
 
 const navLinks = [
   { label: 'About Us', href: '#about' },
