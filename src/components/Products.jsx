@@ -101,7 +101,7 @@ export default function Products() {
               <div>
                 <a href="https://beylelekka.com/" target="_blank" rel="noopener noreferrer"
                   className="inline-block px-8 sm:px-10 py-4 bg-cyan-500 text-black text-[11px] font-black uppercase tracking-[0.2em] hover:bg-cyan-400 transition-all duration-300">
-                  Try Lekka →
+                  Try Beyle Lekka →
                 </a>
               </div>
             </div>
